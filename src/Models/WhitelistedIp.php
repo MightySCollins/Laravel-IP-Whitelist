@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Auth;
+namespace AtomJuice\IpWhitelist\Models\Auth;
 
 use App\Models\Model;
 use Mpociot\Teamwork\Traits\UsedByTeams;

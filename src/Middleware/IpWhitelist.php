@@ -6,9 +6,9 @@ use Log;
 use Cache;
 use Closure;
 use Illuminate\Http\Request;
-use App\Models\Auth\WhitelistedIp;
 use Symfony\Component\HttpFoundation\IpUtils;
 use AtomJuice\IpWhitelist\Events\IpBlockedEvent;
+use AtomJuice\IpWhitelist\Models\Auth\WhitelistedIp;
 use AtomJuice\IpWhitelist\Exceptions\NoUserInTeamException;
 
 class IpWhitelist
