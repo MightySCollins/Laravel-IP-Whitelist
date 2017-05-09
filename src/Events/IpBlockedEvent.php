@@ -13,7 +13,7 @@ class IpBlockedEvent
     protected $ip;
     protected $user;
 
-    public function __construct(int $ip, $user)
+    public function __construct($ip, $user)
     {
         $this->ip = $ip;
         $this->user = $user;
