@@ -40,8 +40,12 @@ class IpWhitelist
         return response('IP not whitelisted', 403);
     }
 
-    private function logBlocked($ip, $user, $team)
+    private function logBlocked($ip, $user, $team = null)
     {
-        Log::info("IP $ip blocked for user $user->name $user->id team $team->name $team->id");
+        if (isset($team)) {
+            Log::info("IP $ip blocked for user $user->name $user->id team $team->name $team->id");
+        } else {
+            Log::info("IP $ip blocked for user $user->name $user->id");
+        }
     }
 }
