@@ -1,0 +1,24 @@
+{
+  "name": "atomjuice/ipwhitelist",
+  "description": "",
+  "type": "package",
+  "version": "0.1",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sam Collins",
+      "email": "sam@scollins.co",
+      "homepage": "https://github.com/MightySCollins",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "laravel/framework": "^5.4",
+
+  },
+  "autoload": {
+    "psr-4": {
+      "AtomJuice\\IpWhitelist\\": "src/"
+    }
+  }
+}
